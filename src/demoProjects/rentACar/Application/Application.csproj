@@ -7,9 +7,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Folder Include="Features\Brands\Constants\" />
-		<Folder Include="Features\Brands\Models\" />
-		<Folder Include="Features\Brands\Queries\" />
+	  <Compile Remove="Features\Brands\Queries\**" />
+	  <EmbeddedResource Remove="Features\Brands\Queries\**" />
+	  <None Remove="Features\Brands\Queries\**" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -20,6 +20,12 @@
 	<ItemGroup>
 		<ProjectReference Include="..\..\..\corePackages\Core.CrossCuttingConcers\Core.CrossCuttingConcerns.csproj" />
 		<ProjectReference Include="..\Domain\Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Features\Brands\Constants\" />
+	  <Folder Include="Features\Brands\Models\" />
+	  <Folder Include="Features\Brands\Qeries\" />
 	</ItemGroup>
 
 </Project>
